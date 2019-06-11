@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/parkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ABOUT OUR APP"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/park"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/parkr"
+        android:gravity="center"
+        android:src="@drawable/mpc" />
+    <TextView
+        android:id="@+id/parka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This app will guide the usrs about the areas where the users can park their car safely"
+        android:layout_below="@id/park"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:text="    NEXT"
+        android:onClick="OpenNewPage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+
+</RelativeLayout>
