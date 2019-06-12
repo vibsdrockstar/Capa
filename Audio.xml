@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Audio">
+<EditText
+    android:id="@+id/et_lan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Enter Language name"/>
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="243dp"
+        android:onClick="playAudio"
+        android:text="    NEXT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+</RelativeLayout>
