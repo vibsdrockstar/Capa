@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstTimeUsers">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_firsttimeuser"
+    android:text="REGISTRATION FOR FIRST TIME USERS"
+    android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_nameop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tv_firsttimeuser"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/et_nameop"/>
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone number"
+        android:inputType="phone"
+        android:layout_below="@id/et_email"/>
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter DOB"
+        android:inputType="date"
+        android:layout_below="@id/et_phone"/>
+    <EditText
+        android:id="@+id/et_vtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter vehicle type"
+        android:inputType="number"
+        android:layout_below="@id/et_dob"/>
+    <Button
+        android:id="@+id/b_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_vtype"
+        android:layout_marginTop="40dp"
+        android:text="SIGN UP"
+       />
+</RelativeLayout>
