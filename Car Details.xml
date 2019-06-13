@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarDetails">
+    <EditText
+    android:id="@+id/et_nameop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Enter Name"
+    android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/et_houseadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint= "Enter House Address"
+        android:inputType="textCapSentences"
+        android:layout_below="@id/et_nameop"/>
+    <EditText
+        android:id="@+id/et_carname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint= "Enter Car Name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/et_houseadd"/>
+    <EditText
+        android:id="@+id/et_carno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint= "Enter no of seats "
+        android:inputType="number"
+        android:layout_below="@id/et_carname"/>
+    <EditText
+        android:id="@+id/et_famno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint= "Enter family members number"
+        android:inputType="number"
+        android:layout_below="@id/et_carno"/>
+
+    <Button
+        android:id="@+id/et_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_famno"
+        android:layout_marginTop="78dp"
+        android:onClick="openNewPage"
+        android:text="PROCEED" />
+
+</RelativeLayout>
