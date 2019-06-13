@@ -5,41 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Details">
-
-    <TextView
-        android:id="@+id/parkr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="DETAILS"
-        android:textStyle="bold" />
+<EditText
+    android:id="@+id/et_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Enter Email"
+    android:inputType="textEmailAddress"/>
     <EditText
+        android:id="@+id/et_telnum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/et_name"
-        android:hint="Enter person name"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_hnum"
-        android:hint="Enter house address"
-        android:layout_below="@id/et_name"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_occupation"
-        android:hint="Enter occupation"
-        android:layout_below="@id/et_hnum"/>
+        android:hint= "Enter Phone Number"
+        android:inputType="phone"
+        android:layout_below="@id/et_email"/>
 
     <Button
-        android:id="@+id/bnext"
-        android:layout_width="match_parent"
+        android:id="@+id/et_proceed"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="243dp"
-        android:onClick="OpenNewPage"
-        android:text="    NEXT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
-
-
+        android:layout_below="@id/et_telnum"
+        android:layout_marginTop="40dp"
+        android:onClick="openNewPage"
+        android:text="PROCEED" />
 </RelativeLayout>
