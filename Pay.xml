@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pay"
+        android:text="PAYMENT SECTION"
+       />
+
+    <ImageView
+        android:id="@+id/paynow"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/pay"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:src="@drawable/payment" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ScrollView>
+    <AutoCompleteTextView
+        android:id="@+id/nob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Bank Name"
+        android:inputType="text"
+        android:layout_above="@id/et_amount"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_amount"
+        android:hint="Enter  Amount"
+        android:inputType="number"
+        android:layout_below="@id/paynow" />
+
+    <EditText
+        android:id="@+id/et_transcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter  Transaction Code"
+        android:inputType="numberPassword"
+        android:layout_below="@id/et_amount"/>
+
+    <Button
+        android:id="@+id/b_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_transcode"
+        android:layout_marginTop="54dp"
+        android:text="PROCEED"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/b_proceed"/>
+
+
+
+</RelativeLayout>
