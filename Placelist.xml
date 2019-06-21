@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Parker</string>
+    <string-array name="Places">
+    <place>---Select Destination---</place>
+    <place>Hospital</place>
+    <place>Hockey Ground</place>
+    <place>Main Building </place>
+    <place> Student Activity Centre</place>
+    <place>Lecture Hall</place>
+    <place>Textile Department </place>
+    <place>Nilgiri Hostel</place>
+    <place>IITD Mess</place>
+    </string-array>
+</resources>
