@@ -1,0 +1,9 @@
+<string-array name="Duration">
+    <time>---Select Parking Time</time>
+    <time>15 minutes</time>
+    <time>20 minutes</time>
+    <time>25 minutes</time>
+    <time>30 minutes</time>
+    <time>1 hour</time>
+    <time>More than 1 hour</time>
+</string-array>
