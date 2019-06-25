@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Disability">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_disabledpersons"
+        android:text="DATA FOR DISABLED PEOPLE"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_nameop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tv_disabledpersons"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/et_nameop"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disabilitytype"
+        android:entries="@array/Disability"
+        android:layout_below="@id/et_email"
+        android:layout_weight="1" />
+
+
+    <!--<ProgressBar-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/prgbar"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:indeterminate="false" />-->
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone number"
+        android:inputType="phone"
+        android:layout_below="@id/disabilitytype"/>
+    <EditText
+        android:id="@+id/et_sof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Student/Faculty/Staff"
+        android:inputType="textCapWords"
+        android:layout_below="@id/et_phone"/>
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter DOB"
+        android:inputType="date"
+        android:layout_below="@id/et_sof"/>
+    <EditText
+        android:id="@+id/et_vtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter vehicle type(2 wheeler or 4 wheeler)"
+        android:inputType="number"
+        android:layout_below="@id/et_dob"/>
+    <Button
+        android:id="@+id/b_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:onClick="openNewPage"
+        android:text="UPLOAD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+
+
+</RelativeLayout>
