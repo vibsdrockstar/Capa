@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Parking">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_parkarea"
+        android:text="PARKING AREA DETAILS"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_nameop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:layout_below="@id/tv_parkarea"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/et_nameop"/>
+
+    <EditText
+        android:id="@+id/et_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Area"
+        android:inputType="text"
+        android:layout_below="@id/et_address"/>
+    <EditText
+        android:id="@+id/et_slots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Slots"
+        android:inputType="number"
+        android:layout_below="@id/et_area"/>
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:inputType="number"
+        android:layout_below="@id/et_slots"/>
+    <EditText
+        android:id="@+id/et_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Latitude"
+        android:inputType="number"
+        android:layout_below="@id/et_price"/>
+    <EditText
+        android:id="@+id/et_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longitude"
+        android:inputType="number"
+        android:layout_below="@id/et_latitude"/>
+    <Button
+        android:id="@+id/bsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:text="SUBMIT"
+        android:onClick="displayArea"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+
+</RelativeLayout>
