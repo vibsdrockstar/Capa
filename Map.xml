@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/googleMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Maps"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_weight=".7"/>
+    <Button
+        android:id="@+id/zoomOutButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="9dp"
+        android:background="#ffffff"
+        android:text="-"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/zoomInButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:background="#ffffff"
+        android:layout_above="@+id/zoomOutButton"
+        android:layout_alignStart="@+id/zoomOutButton" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="9dp"
+        android:text="R"
+        android:background="#ffffff"
+        android:layout_above="@+id/zoomInButton"
+        android:layout_alignStart="@+id/zoomInButton"
+        android:layout_alignEnd="@+id/zoomInButton" />
+
+    <CheckBox
+        android:id="@+id/satelliteViewCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="Setallite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp" />
+
+</RelativeLayout>
