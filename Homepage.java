@@ -27,6 +27,16 @@ public class Homepage extends AppCompatActivity {
             case R.id.b_usertype:
                 startActivity(new Intent(this, UserType.class));
                 break;
+                case R.id.b_mobileuser:
+              startActivity(new Intent(this,Msgsetting.class));
+             break;
+case R.id.b_usermessages:
+    startActivity(new Intent(this,EmailIntent.class));
+    break;
+            case R.id.b_pay:
+              startActivity(new Intent(this,Payment.class));
+    break;
+             
         }
     }
 }
