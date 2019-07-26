@@ -36,7 +36,16 @@ case R.id.b_usermessages:
             case R.id.b_pay:
               startActivity(new Intent(this,Payment.class));
     break;
-             
+       case R.id.b_alert:
+    startActivity(new Intent(this,Forecast.class));
+    break;
+case R.id.b_review:
+    startActivity(new Intent(this,reviewhistory.class));
+    break;
+case R.id.b_userhist:
+    startActivity(new Intent(this,UserHistory.class));
+    break;
+      
         }
     }
 }
